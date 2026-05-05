@@ -6,7 +6,7 @@
 
 This repository contains the source code for my personal portfolio website, "The AI Explorer". It showcases my technical expertise, highlighted projects (like the Jarvis AI Assistant and Smart Fire Detection System), and provides a way to get in touch for collaborations.
 
-**Live Site:** [https://sreehari-rpi.github.io/Portfolio/](https://sreehari-rpi.github.io/Portfolio/)
+**Live Site:** [https://sreehari-viju.github.io/Portfolio/](https://sreehari-rpi.github.io/Portfolio/)
 
 ## 🛠️ Built With
 
@@ -43,7 +43,7 @@ This repository contains the source code for my personal portfolio website, "The
 ## 👨‍💻 Author
 
 **Sreehari Viju**
-*   GitHub: [@Sreehari-rpi](https://github.com/Sreehari-rpi)
+*   GitHub: [@sreehari-vijui](https://github.com/Sreehari-rpi)
 
 ## 📄 License
 
