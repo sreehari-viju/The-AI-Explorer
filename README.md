@@ -1,12 +1,12 @@
-# The AI Explorer - Portfolio
+# The AI Explorer - the-ai-explorer
 
-> A sleek, Cybernetic-Industrial styled technical portfolio for a student developer specializing in AI, IoT, and Robotics.
+> A sleek, Cybernetic-Industrial styled technical the-ai-explorer for a student developer specializing in AI, IoT, and Robotics.
 
 ## 🚀 Overview
 
-This repository contains the source code for my personal portfolio website, "The AI Explorer". It showcases my technical expertise, highlighted projects (like the Jarvis AI Assistant and Smart Fire Detection System), and provides a way to get in touch for collaborations.
+This repository contains the source code for my personal the-ai-explorer website, "The AI Explorer". It showcases my technical expertise, highlighted projects (like the Jarvis AI Assistant and Smart Fire Detection System), and provides a way to get in touch for collaborations.
 
-**Live Site:** [https://sreehari-viju.github.io/Portfolio/](https://sreehari-rpi.github.io/Portfolio/)
+**Live Site:** [https://sreehari-rpi.github.io/the-ai-explorer/](https://sreehari-rpi.github.io/the-ai-explorer/)
 
 ## 🛠️ Built With
 
@@ -26,7 +26,7 @@ This repository contains the source code for my personal portfolio website, "The
 
 ```text
 /
-├── index.html            # Main portfolio landing page
+├── index.html            # Main the-ai-explorer landing page
 ├── 404.html              # Custom error page
 ├── style.css             # Global stylesheet and UI theme
 ├── script.js             # Interaction logic and animations
@@ -43,8 +43,8 @@ This repository contains the source code for my personal portfolio website, "The
 ## 👨‍💻 Author
 
 **Sreehari Viju**
-*   GitHub: [@sreehari-vijui](https://github.com/Sreehari-rpi)
+*   GitHub: [@Sreehari-rpi](https://github.com/Sreehari-rpi)
 
 ## 📄 License
 
-This project is intended for personal portfolio use.
+This project is intended for personal the-ai-explorer use.

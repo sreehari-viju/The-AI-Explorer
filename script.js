@@ -1,4 +1,4 @@
-// Custom JavaScript for Personal Portfolio of Sreehari Viju
+// Custom JavaScript for Personal the-ai-explorer of Sreehari Viju
 
 document.addEventListener('DOMContentLoaded', () => {
     // Add scrolled shadow class to header
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
     sections.forEach(section => navObserver.observe(section));
 
     // Simple performance logger or tracker (optional)
-    console.log("Sreehari Viju Portfolio loaded. Premium UX initialized successfully.");
+    console.log("Sreehari Viju the-ai-explorer loaded. Premium UX initialized successfully.");
 
     // Dynamic Scroll-to-Top Button
     const scrollTopBtn = document.createElement('button');
