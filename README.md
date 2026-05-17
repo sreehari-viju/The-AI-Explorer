@@ -6,7 +6,7 @@
 
 This repository contains the source code for my personal the-ai-explorer website, "The AI Explorer". It showcases my technical expertise, highlighted projects (like the Jarvis AI Assistant and Smart Fire Detection System), and provides a way to get in touch for collaborations.
 
-**Live Site:** [https://sreehari-rpi.github.io/the-ai-explorer/](https://sreehari-rpi.github.io/the-ai-explorer/)
+**Live Site:** [https://sreehari-viju.github.io/The-AI-Explorer/](https://sreehari-viju.github.io/The-AI-Explorer)
 
 ## 🛠️ Built With
 
