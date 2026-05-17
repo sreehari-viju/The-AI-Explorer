@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raspberry Pi Weather Station | The AI Explorer</title>
+    <link rel="icon" type="image/png" href="../assets/images/logo.png">
+    <meta name="description" content="Raspberry Pi-powered local weather station with real-time temperature, humidity and pressure display. Built by Sreehari Viju, a 9th grade student from Trivandrum.">
+    <meta name="keywords" content="Raspberry Pi weather station, DHT22 sensor, BMP280, Python IoT, student project Trivandrum">
+    <meta property="og:title" content="Raspberry Pi Weather Station | The AI Explorer">
+    <meta property="og:description" content="Raspberry Pi-powered local weather station with real-time temperature, humidity and pressure display.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://sreehari-viju.github.io/the-ai-explorer/projects/weather-station.html">
+    <meta property="og:image" content="https://sreehari-viju.github.io/the-ai-explorer/assets/images/weather-station.png">
+    <meta property="og:locale" content="en_IN">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Raspberry Pi Weather Station | The AI Explorer">
+    <meta name="twitter:description" content="Raspberry Pi-powered local weather station with real-time temperature, humidity and pressure display.">
+    <meta name="twitter:image" content="https://sreehari-viju.github.io/the-ai-explorer/assets/images/weather-station.png">
+    <link rel="canonical" href="https://sreehari-viju.github.io/the-ai-explorer/projects/weather-station.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="bg-glow"></div>
+    <header>
+        <nav>
+            <a href="../index.html" class="logo" aria-label="Go to Homepage"><img src="../assets/images/logo.png" alt="The AI Explorer Logo" class="nav-logo"> The AI Explorer</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#skills">Skills</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="project-detail">
+        <span class="hero-badge animate-on-scroll">Raspberry Pi & Data Logging</span>
+        <h1 class="animate-on-scroll">Weather Station</h1>
+        <div class="project-meta animate-on-scroll">
+            <div class="meta-item">
+                <span class="meta-label">Category</span>
+                <span class="meta-value">Data Logging / IoT</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Core Tech</span>
+                <span class="meta-value">Raspberry Pi, Python, DHT22</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Timeline</span>
+                <span class="meta-value">Spring 2026</span>
+            </div>
+        </div>
+        <img src="../assets/images/weather-station.png" alt="Raspberry Pi Weather Station with sensor displays" class="project-detail-img animate-on-scroll" loading="lazy">
+        <div class="project-text animate-on-scroll">
+            <h2>Project Overview</h2>
+            <p>The <strong>Weather Station</strong> is a Raspberry Pi-powered environmental monitoring system that collects and displays real-time atmospheric data including temperature, humidity, and barometric pressure. The data is presented on a local LCD display and simultaneously logged to a CSV file for trend analysis, making it a practical tool for understanding local microclimate patterns in Trivandrum.</p>
+            <h2>Key Features & Implementation</h2>
+            <ul>
+                <li><strong>Multi-Sensor Array:</strong> A DHT22 sensor measures temperature and humidity while a BMP280 module captures barometric pressure and altitude via the I2C bus, all polled every 10 seconds.</li>
+                <li><strong>Live Data Display:</strong> A 20x4 I2C LCD screen shows all sensor readings in a clean, formatted layout with color-coded status indicators via an RGB LED strip.</li>
+                <li><strong>Historical Data Logging:</strong> A Python script continuously logs all readings with timestamps to a structured CSV file, enabling data analysis and trend visualization using matplotlib.</li>
+            </ul>
+            <h2>Challenges Solved</h2>
+            <p>Running the data logger continuously required managing Raspberry Pi's SD card write cycles to prevent premature wear. The solution was implementing a buffered write system that accumulates 60 readings in RAM before flushing to disk, reducing write frequency by 98% while preserving all data integrity.</p>
+        </div>
+        <section class="related-projects">
+            <h2 class="section-title">Explore Related Projects</h2>
+            <p class="section-subtitle">Discover more of our IoT and data projects.</p>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="../assets/images/iot-dashboard.png" alt="NodeMCU IoT Telemetry Dashboard visual showcase" class="project-img" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3><a href="iot-dashboard.html">Real-Time IoT Dashboard</a></h3>
+                        <p class="project-desc">A low-latency dashboard for remote device telemetry. Aggregates NodeMCU sensor feeds over a visual grid interface.</p>
+                        <div class="project-footer">
+                            <span class="tag">NodeMCU</span>
+                            <a href="iot-dashboard.html" class="project-link" aria-label="View Project Details">View Details →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="../assets/images/plant-watering.png" alt="Smart Plant Watering System visual showcase" class="project-img" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3><a href="plant-watering.html">Smart Plant Watering System</a></h3>
+                        <p class="project-desc">ESP8266-based automatic irrigation with soil moisture sensors and real-time mobile alerts.</p>
+                        <div class="project-footer">
+                            <span class="tag">ESP8266</span>
+                            <a href="plant-watering.html" class="project-link" aria-label="View Project Details">View Details →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <span class="footer-text">© 2026 Sreehari Viju. Student Developer, Trivandrum India.</span>
+            <div class="footer-links">
+                <a href="../index.html">Home</a>
+                <a href="../index.html#projects">Projects</a>
+                <a href="../index.html#skills">Skills</a>
+            </div>
+        </div>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+</html>

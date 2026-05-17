@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultrasonic Distance Meter | The AI Explorer</title>
+    <link rel="icon" type="image/png" href="../assets/images/logo.png">
+    <meta name="description" content="Arduino HC-SR04 ultrasonic sensor with OLED display for accurate real-time distance measurement. Built by Sreehari Viju, a 9th grade student from Trivandrum.">
+    <meta name="keywords" content="ultrasonic distance meter, HC-SR04, OLED display, Arduino sensor, student project Trivandrum">
+    <meta property="og:title" content="Ultrasonic Distance Meter | The AI Explorer">
+    <meta property="og:description" content="Arduino HC-SR04 ultrasonic sensor with OLED display for accurate real-time distance measurement and proximity alerts.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://sreehari-viju.github.io/the-ai-explorer/projects/ultrasonic-meter.html">
+    <meta property="og:image" content="https://sreehari-viju.github.io/the-ai-explorer/assets/images/ultrasonic-meter.png">
+    <meta property="og:locale" content="en_IN">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ultrasonic Distance Meter | The AI Explorer">
+    <meta name="twitter:description" content="Arduino HC-SR04 ultrasonic sensor with OLED display for accurate real-time distance measurement and proximity alerts.">
+    <meta name="twitter:image" content="https://sreehari-viju.github.io/the-ai-explorer/assets/images/ultrasonic-meter.png">
+    <link rel="canonical" href="https://sreehari-viju.github.io/the-ai-explorer/projects/ultrasonic-meter.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"CreativeWork","name":"Ultrasonic Distance Meter","author":{"@type":"Person","name":"Sreehari Viju","address":{"@type":"Place","name":"Trivandrum, India"}},"description":"Arduino HC-SR04 ultrasonic sensor with OLED display for accurate real-time distance measurement."}
+    </script>
+</head>
+<body>
+    <div class="bg-glow"></div>
+    <header>
+        <nav>
+            <a href="../index.html" class="logo" aria-label="Go to Homepage"><img src="../assets/images/logo.png" alt="The AI Explorer Logo" class="nav-logo"> The AI Explorer</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#skills">Skills</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="project-detail">
+        <span class="hero-badge animate-on-scroll">Sensors & Measurement</span>
+        <h1 class="animate-on-scroll">Ultrasonic Distance Meter</h1>
+        <div class="project-meta animate-on-scroll">
+            <div class="meta-item"><span class="meta-label">Category</span><span class="meta-value">Sensors & Measurement</span></div>
+            <div class="meta-item"><span class="meta-label">Core Tech</span><span class="meta-value">Arduino, HC-SR04, OLED</span></div>
+            <div class="meta-item"><span class="meta-label">Timeline</span><span class="meta-value">Spring 2026</span></div>
+        </div>
+        <img src="../assets/images/ultrasonic-meter.png" alt="Ultrasonic Distance Meter with OLED display and HC-SR04 sensor" class="project-detail-img animate-on-scroll" loading="lazy">
+        <div class="project-text animate-on-scroll">
+            <h2>Project Overview</h2>
+            <p>The <strong>Ultrasonic Distance Meter</strong> is a handheld Arduino-based measurement tool that uses the HC-SR04 ultrasonic sensor to measure distances from 2cm to 400cm with ±3mm accuracy. Results are displayed on a 0.96" I2C OLED screen with a real-time sonar-style bar graph and a buzzer that beeps faster as an object gets closer — making it useful for robotics obstacle detection and DIY measurement applications.</p>
+            <h2>Key Features & Implementation</h2>
+            <ul>
+                <li><strong>HC-SR04 Ultrasonic Sensing:</strong> The sensor emits a 40kHz ultrasonic burst and measures the echo return time. The Arduino converts the time-of-flight to distance using the speed of sound, averaging 5 readings to reduce noise.</li>
+                <li><strong>OLED Real-Time Display:</strong> A 128x64 OLED screen renders the numeric distance, unit (cm/inches switchable), and a dynamic bar graph that scales visually from 0–400cm.</li>
+                <li><strong>Proximity Buzzer Alert:</strong> A passive buzzer generates PWM tones with beep frequency inversely proportional to distance — creating an intuitive parking-sensor style audio warning below 30cm.</li>
+            </ul>
+            <h2>Challenges Solved</h2>
+            <p>Ultrasonic readings were noisy near angled or soft surfaces. A median-filter algorithm over a 7-sample rolling window was implemented, discarding outliers before computing the final distance, reducing measurement variance by over 80% across different surface types.</p>
+        </div>
+        <section class="related-projects">
+            <h2 class="section-title">Explore Related Projects</h2>
+            <p class="section-subtitle">Discover more of our sensor and robotics projects.</p>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-img-wrapper"><img src="../assets/images/line-follower.png" alt="Line Following Robot visual showcase" class="project-img" loading="lazy"></div>
+                    <div class="project-content">
+                        <h3><a href="line-follower.html">Line Following Robot</a></h3>
+                        <p class="project-desc">Autonomous robot navigating black-line tracks using a 5-sensor IR array and real-time PID speed control.</p>
+                        <div class="project-footer"><span class="tag">Robotics</span><a href="line-follower.html" class="project-link" aria-label="View Project Details">View Details →</a></div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img-wrapper"><img src="../assets/images/led-matrix.png" alt="LED Matrix Display visual showcase" class="project-img" loading="lazy"></div>
+                    <div class="project-content">
+                        <h3><a href="led-matrix.html">LED Matrix Display</a></h3>
+                        <p class="project-desc">Arduino-powered 8x32 cascaded LED matrix with scrolling text and wireless message updates via Bluetooth.</p>
+                        <div class="project-footer"><span class="tag">Arduino</span><a href="led-matrix.html" class="project-link" aria-label="View Project Details">View Details →</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <span class="footer-text">© 2026 Sreehari Viju. Student Developer, Trivandrum India.</span>
+            <div class="footer-links">
+                <a href="../index.html">Home</a>
+                <a href="../index.html#projects">Projects</a>
+                <a href="../index.html#skills">Skills</a>
+            </div>
+        </div>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+</html>

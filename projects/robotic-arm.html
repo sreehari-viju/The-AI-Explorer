@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Robotic Arm Project | The AI Explorer</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/images/logo.png">
+    <meta name="description" content="Arduino-controlled robotic arm with servo motors for pick-and-place automation. Built by Sreehari Viju, a 9th grade student from Trivandrum.">
+    <meta name="keywords" content="robotic arm, Arduino servo, pick and place robot, student robotics project, Trivandrum">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Smart Robotic Arm Project | The AI Explorer">
+    <meta property="og:description" content="Arduino-controlled robotic arm with servo motors for pick-and-place automation.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://sreehari-viju.github.io/the-ai-explorer/projects/robotic-arm.html">
+    <meta property="og:image" content="https://sreehari-viju.github.io/the-ai-explorer/assets/images/robotic-arm.png">
+    <meta property="og:locale" content="en_IN">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Smart Robotic Arm Project | The AI Explorer">
+    <meta name="twitter:description" content="Arduino-controlled robotic arm with servo motors for pick-and-place automation.">
+    <meta name="twitter:image" content="https://sreehari-viju.github.io/the-ai-explorer/assets/images/robotic-arm.png">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://sreehari-viju.github.io/the-ai-explorer/projects/robotic-arm.html">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Base Stylesheet -->
+    <link rel="stylesheet" href="../style.css">
+
+    <!-- Schema.org Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "Smart Robotic Arm Project",
+      "author": {
+        "@type": "Person",
+        "name": "Sreehari Viju",
+        "address": {
+          "@type": "Place",
+          "name": "Trivandrum, India"
+        }
+      },
+      "description": "Arduino-controlled robotic arm with servo motors for pick-and-place automation."
+    }
+    </script>
+</head>
+<body>
+    <div class="bg-glow"></div>
+
+    <header>
+        <nav>
+            <a href="../index.html" class="logo" aria-label="Go to Homepage"><img src="../assets/images/logo.png" alt="The AI Explorer Logo" class="nav-logo"> The AI Explorer</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#skills">Skills</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="project-detail">
+        <span class="hero-badge animate-on-scroll">Robotics & Automation</span>
+        <h1 class="animate-on-scroll">Smart Robotic Arm</h1>
+
+        <div class="project-meta animate-on-scroll">
+            <div class="meta-item">
+                <span class="meta-label">Category</span>
+                <span class="meta-value">Robotics</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Core Tech</span>
+                <span class="meta-value">Arduino, Servo Motors, C++</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Timeline</span>
+                <span class="meta-value">Spring 2026</span>
+            </div>
+        </div>
+
+        <img src="../assets/images/robotic-arm.png" alt="Futuristic Smart Robotic Arm with servo motors" class="project-detail-img animate-on-scroll" loading="lazy">
+
+        <div class="project-text animate-on-scroll">
+            <h2>Project Overview</h2>
+            <p>
+                As a robotics enthusiast from Trivandrum, I designed and built a <strong>Smart Robotic Arm</strong> using an Arduino UNO and six servo motors, replicating the degrees of freedom found in industrial pick-and-place systems. The arm can be programmed to execute repeatable motion sequences, making it ideal for basic manufacturing automation demonstrations and educational purposes.
+            </p>
+
+            <h2>Key Features & Implementation</h2>
+            <ul>
+                <li><strong>6-DOF Control:</strong> Six independently controllable servo motors provide full freedom of movement, enabling complex multi-axis positioning.</li>
+                <li><strong>Joystick Interface:</strong> A dual-axis joystick controller provides intuitive real-time manual control of each joint for precise positioning.</li>
+                <li><strong>Sequence Playback:</strong> Programmed motion recording and playback capability allows automated repetition of learned pick-and-place routines.</li>
+            </ul>
+
+            <h2>Challenges Solved</h2>
+            <p>
+                Coordinating six servo motors simultaneously without causing signal interference or power brown-outs required careful PWM timing management. By implementing a dedicated power distribution board and optimizing the Arduino servo library's update intervals, smooth and synchronized motion was achieved across all joints.
+            </p>
+        </div>
+
+        <!-- Related Projects Section -->
+        <section class="related-projects">
+            <h2 class="section-title">Explore Related Projects</h2>
+            <p class="section-subtitle">Discover more of our IoT and robotics projects.</p>
+
+            <div class="projects-grid">
+                <!-- Line Follower -->
+                <div class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="../assets/images/line-follower.png" alt="Line Following Robot visual showcase" class="project-img" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3><a href="line-follower.html">Line Following Robot</a></h3>
+                        <p class="project-desc">Autonomous robot navigating black-line tracks using IR sensor arrays and real-time PID control.</p>
+                        <div class="project-footer">
+                            <span class="tag">Arduino</span>
+                            <a href="line-follower.html" class="project-link" aria-label="View Project Details">View Details →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IoT Dashboard -->
+                <div class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="../assets/images/iot-dashboard.png" alt="NodeMCU IoT Telemetry Dashboard visual showcase" class="project-img" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3><a href="iot-dashboard.html">Real-Time IoT Dashboard</a></h3>
+                        <p class="project-desc">A low-latency dashboard for remote device telemetry. Aggregates NodeMCU sensor feeds over a visual grid interface.</p>
+                        <div class="project-footer">
+                            <span class="tag">NodeMCU</span>
+                            <a href="iot-dashboard.html" class="project-link" aria-label="View Project Details">View Details →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <span class="footer-text">© 2026 Sreehari Viju. Student Developer, Trivandrum India.</span>
+            <div class="footer-links">
+                <a href="../index.html">Home</a>
+                <a href="../index.html#projects">Projects</a>
+                <a href="../index.html#skills">Skills</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

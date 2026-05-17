@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Plant Watering System | The AI Explorer</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/images/logo.png">
+    <meta name="description" content="ESP8266-based automatic irrigation system with soil moisture sensors and mobile alerts. Built by Sreehari Viju, a 9th grade student from Trivandrum.">
+    <meta name="keywords" content="smart irrigation, ESP8266, soil moisture sensor, IoT plant watering, student project Trivandrum">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Smart Plant Watering System | The AI Explorer">
+    <meta property="og:description" content="ESP8266-based automatic irrigation system with soil moisture sensors and mobile alerts.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://sreehari-viju.github.io/the-ai-explorer/projects/plant-watering.html">
+    <meta property="og:image" content="https://sreehari-viju.github.io/the-ai-explorer/assets/images/plant-watering.png">
+    <meta property="og:locale" content="en_IN">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Smart Plant Watering System | The AI Explorer">
+    <meta name="twitter:description" content="ESP8266-based automatic irrigation system with soil moisture sensors and mobile alerts.">
+    <meta name="twitter:image" content="https://sreehari-viju.github.io/the-ai-explorer/assets/images/plant-watering.png">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://sreehari-viju.github.io/the-ai-explorer/projects/plant-watering.html">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Base Stylesheet -->
+    <link rel="stylesheet" href="../style.css">
+
+    <!-- Schema.org Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "Smart Plant Watering System",
+      "author": {
+        "@type": "Person",
+        "name": "Sreehari Viju",
+        "address": {
+          "@type": "Place",
+          "name": "Trivandrum, India"
+        }
+      },
+      "description": "ESP8266-based automatic irrigation system with soil moisture sensors and mobile alerts."
+    }
+    </script>
+</head>
+<body>
+    <div class="bg-glow"></div>
+
+    <header>
+        <nav>
+            <a href="../index.html" class="logo" aria-label="Go to Homepage"><img src="../assets/images/logo.png" alt="The AI Explorer Logo" class="nav-logo"> The AI Explorer</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#skills">Skills</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="project-detail">
+        <span class="hero-badge animate-on-scroll">IoT & Smart Agriculture</span>
+        <h1 class="animate-on-scroll">Smart Plant Watering System</h1>
+
+        <div class="project-meta animate-on-scroll">
+            <div class="meta-item">
+                <span class="meta-label">Category</span>
+                <span class="meta-value">IoT / Smart Home</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Core Tech</span>
+                <span class="meta-value">ESP8266, Soil Sensor, MQTT</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Timeline</span>
+                <span class="meta-value">Spring 2026</span>
+            </div>
+        </div>
+
+        <img src="../assets/images/plant-watering.png" alt="Smart Plant Watering System with ESP8266 and soil sensors" class="project-detail-img animate-on-scroll" loading="lazy">
+
+        <div class="project-text animate-on-scroll">
+            <h2>Project Overview</h2>
+            <p>
+                The <strong>Smart Plant Watering System</strong> is an IoT-powered irrigation solution that monitors soil moisture in real time and automatically triggers a water pump when plants need hydration. Built on the ESP8266 NodeMCU platform and connected via Wi-Fi, the system sends instant mobile notifications and logs moisture data to a cloud dashboard — ensuring plants are never over or under-watered.
+            </p>
+
+            <h2>Key Features & Implementation</h2>
+            <ul>
+                <li><strong>Soil Moisture Sensing:</strong> Capacitive soil moisture sensors provide accurate, corrosion-resistant readings and send analog data to the ESP8266 every 30 seconds.</li>
+                <li><strong>Automated Pump Control:</strong> A relay module activates the water pump automatically when moisture drops below a customizable threshold, then cuts off once optimal hydration is reached.</li>
+                <li><strong>Mobile Alerts via MQTT:</strong> Real-time push notifications are sent through an MQTT broker to a mobile app whenever the pump activates or moisture levels become critical.</li>
+            </ul>
+
+            <h2>Challenges Solved</h2>
+            <p>
+                Preventing the water pump from short-cycling (turning on and off too rapidly) required implementing a hysteresis-based threshold with a configurable dead-band. This ensured stable pump operation and extended the lifespan of both the pump and relay module significantly.
+            </p>
+        </div>
+
+        <!-- Related Projects Section -->
+        <section class="related-projects">
+            <h2 class="section-title">Explore Related Projects</h2>
+            <p class="section-subtitle">Discover more of our IoT and robotics projects.</p>
+
+            <div class="projects-grid">
+                <!-- IoT Dashboard -->
+                <div class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="../assets/images/iot-dashboard.png" alt="NodeMCU IoT Telemetry Dashboard visual showcase" class="project-img" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3><a href="iot-dashboard.html">Real-Time IoT Dashboard</a></h3>
+                        <p class="project-desc">A low-latency dashboard for remote device telemetry. Aggregates NodeMCU sensor feeds over a visual grid interface.</p>
+                        <div class="project-footer">
+                            <span class="tag">NodeMCU</span>
+                            <a href="iot-dashboard.html" class="project-link" aria-label="View Project Details">View Details →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fire Detection -->
+                <div class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="../assets/images/fire-detection.png" alt="Smart IoT Fire Detection visual showcase" class="project-img" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3><a href="fire-detection.html">Smart Fire Detection System</a></h3>
+                        <p class="project-desc">Real-time emergency scanning and tracking using advanced telemetry arrays and automated NodeMCU alarms.</p>
+                        <div class="project-footer">
+                            <span class="tag">IoT</span>
+                            <a href="fire-detection.html" class="project-link" aria-label="View Project Details">View Details →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <span class="footer-text">© 2026 Sreehari Viju. Student Developer, Trivandrum India.</span>
+            <div class="footer-links">
+                <a href="../index.html">Home</a>
+                <a href="../index.html#projects">Projects</a>
+                <a href="../index.html#skills">Skills</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
