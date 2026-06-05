@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Home Automation Project | The AI Explorer</title>
+    <link rel="icon" type="image/png" href="../assets/images/logo.webp">
+    <meta name="description" content="ESP32-based smart home automation system with voice and app control built by Sreehari Viju, a 9th grade student from Trivandrum.">
+    <meta name="keywords" content="smart home automation, ESP32, home IoT, relay control, voice control, student project Trivandrum">
+    <meta property="og:title" content="Smart Home Automation Project | The AI Explorer">
+    <meta property="og:description" content="ESP32-based smart home automation system controlling lights and appliances via app and voice commands.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://sreehari-viju.github.io/The-AI-Explorer/projects/home-automation.html">
+    <meta property="og:image" content="https://sreehari-viju.github.io/The-AI-Explorer/assets/images/home-automation.png">
+    <meta property="og:locale" content="en_IN">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Smart Home Automation Project | The AI Explorer">
+    <meta name="twitter:description" content="ESP32-based smart home automation system controlling lights and appliances via app and voice commands.">
+    <meta name="twitter:image" content="https://sreehari-viju.github.io/The-AI-Explorer/assets/images/home-automation.png">
+    <link rel="canonical" href="https://sreehari-viju.github.io/The-AI-Explorer/projects/home-automation.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "Smart Home Automation Project",
+      "author": {
+        "@type": "Person",
+        "name": "Sreehari Viju",
+        "address": { "@type": "Place", "name": "Trivandrum, India" }
+      },
+      "description": "ESP32-based smart home automation system with voice and app control."
+    }
+    </script>
+</head>
+<body>
+    <div class="bg-glow"></div>
+    <header>
+        <nav>
+            <a href="../index.html" class="logo" aria-label="Go to Homepage"><img src="../assets/images/logo.webp" alt="The AI Explorer Logo" class="nav-logo"> The AI Explorer</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#skills">Skills</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="project-detail">
+        <span class="hero-badge animate-on-scroll">IoT & Smart Living</span>
+        <h1 class="animate-on-scroll">Smart Home Automation</h1>
+        <div class="project-meta animate-on-scroll">
+            <div class="meta-item">
+                <span class="meta-label">Category</span>
+                <span class="meta-value">IoT / Home Automation</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Core Tech</span>
+                <span class="meta-value">ESP32, Relay Module, MQTT</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Timeline</span>
+                <span class="meta-value">Spring 2026</span>
+            </div>
+        </div>
+        <img src="../assets/images/home-automation.webp" alt="Smart Home Automation system with ESP32 and relay modules" class="project-detail-img animate-on-scroll" loading="lazy">
+        <div class="project-text animate-on-scroll">
+            <h2>Project Overview</h2>
+            <p>The <strong>Smart Home Automation</strong> system uses an ESP32 microcontroller to control up to 8 household appliances — lights, fans, and sockets — via a web dashboard and voice commands. Connected to the home Wi-Fi network and running an MQTT broker, it enables real-time control from any device on the local network without requiring a cloud subscription or internet connection.</p>
+            <h2>Key Features & Implementation</h2>
+            <ul>
+                <li><strong>8-Channel Relay Control:</strong> Eight optocoupler-isolated relay modules safely switch 230V AC loads, controlled individually through dedicated MQTT topics published by the ESP32.</li>
+                <li><strong>Local Web Dashboard:</strong> The ESP32 hosts a responsive web app served over its IP address, showing live appliance states with toggle switches that update in real time using WebSocket communication.</li>
+                <li><strong>Google Assistant Integration:</strong> Via IFTTT webhooks, voice commands like "Hey Google, turn off the fan" trigger HTTP requests that publish MQTT messages to the ESP32 within 2 seconds.</li>
+            </ul>
+            <h2>Challenges Solved</h2>
+            <p>Preventing relay chatter during ESP32 Wi-Fi reconnection events — which caused brief power glitches — required implementing a state-persistence mechanism that saves relay states to flash memory and restores them correctly on every boot and reconnection cycle.</p>
+        </div>
+        <section class="related-projects">
+            <h2 class="section-title">Explore Related Projects</h2>
+            <p class="section-subtitle">Discover more of our IoT projects.</p>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="../assets/images/iot-dashboard.webp" alt="NodeMCU IoT Telemetry Dashboard visual showcase" class="project-img" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3><a href="iot-dashboard.html">Real-Time IoT Dashboard</a></h3>
+                        <p class="project-desc">A low-latency dashboard for remote device telemetry. Aggregates NodeMCU sensor feeds over a visual grid interface.</p>
+                        <div class="project-footer">
+                            <span class="tag">NodeMCU</span>
+                            <a href="iot-dashboard.html" class="project-link" aria-label="View Project Details">View Details →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="../assets/images/plant-watering.webp" alt="Smart Plant Watering System visual showcase" class="project-img" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3><a href="plant-watering.html">Smart Plant Watering System</a></h3>
+                        <p class="project-desc">ESP8266-based automatic irrigation with soil moisture sensors and real-time mobile alerts via MQTT.</p>
+                        <div class="project-footer">
+                            <span class="tag">ESP8266</span>
+                            <a href="plant-watering.html" class="project-link" aria-label="View Project Details">View Details →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <span class="footer-text">© 2026 Sreehari Viju. Student Developer, Trivandrum India.</span>
+            <div class="footer-links">
+                <a href="../index.html">Home</a>
+                <a href="../index.html#projects">Projects</a>
+                <a href="../index.html#skills">Skills</a>
+            </div>
+        </div>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+</html>

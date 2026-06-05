@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Quadcopter Drone | The AI Explorer</title>
+    <link rel="icon" type="image/png" href="../assets/images/logo.webp">
+    <meta name="description" content="Arduino-based self-stabilizing mini quadcopter drone with MPU6050 gyroscope, ESC motor control, and custom PID flight controller, built by Sreehari Viju from Trivandrum.">
+    <meta name="keywords" content="mini quadcopter, Arduino drone, MPU6050 PID controller, DIY quadcopter, ESC motor, student project, Trivandrum">
+    <meta property="og:title" content="Mini Quadcopter Drone | The AI Explorer">
+    <meta property="og:description" content="Arduino-powered self-stabilizing mini quadcopter drone with custom PID flight controller and MPU6050 gyroscope.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://sreehari-viju.github.io/The-AI-Explorer/projects/mini-drone.html">
+    <meta property="og:image" content="https://sreehari-viju.github.io/The-AI-Explorer/assets/images/mini-drone.png">
+    <meta property="og:locale" content="en_IN">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mini Quadcopter Drone | The AI Explorer">
+    <meta name="twitter:description" content="Arduino-powered self-stabilizing quadcopter drone with custom PID flight controller.">
+    <meta name="twitter:image" content="https://sreehari-viju.github.io/The-AI-Explorer/assets/images/mini-drone.png">
+    <link rel="canonical" href="https://sreehari-viju.github.io/The-AI-Explorer/projects/mini-drone.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "Mini Quadcopter Drone",
+      "author": {
+        "@type": "Person",
+        "name": "Sreehari Viju",
+        "address": { "@type": "Place", "name": "Trivandrum, India" }
+      },
+      "description": "Arduino-based self-stabilizing mini quadcopter drone with custom PID flight controller and MPU6050 gyroscope/accelerometer."
+    }
+    </script>
+</head>
+<body>
+    <div class="bg-glow"></div>
+    <header>
+        <nav>
+            <a href="../index.html" class="logo" aria-label="Go to Homepage"><img src="../assets/images/logo.webp" alt="The AI Explorer Logo" class="nav-logo"> The AI Explorer</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#skills">Skills</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="project-detail">
+        <span class="hero-badge animate-on-scroll">Aerial Robotics</span>
+        <h1 class="animate-on-scroll">Mini Quadcopter Drone</h1>
+        <div class="project-meta animate-on-scroll">
+            <div class="meta-item">
+                <span class="meta-label">Category</span>
+                <span class="meta-value">Aerial Robotics</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Core Tech</span>
+                <span class="meta-value">Arduino, MPU6050, 4× ESC, NRF24L01</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Timeline</span>
+                <span class="meta-value">Spring 2026</span>
+            </div>
+        </div>
+        <img src="../assets/images/mini-drone.webp" alt="Mini Quadcopter Drone with Arduino PID flight controller" class="project-detail-img animate-on-scroll" loading="lazy">
+        <div class="project-text animate-on-scroll">
+            <h2>Project Overview</h2>
+            <p>The <strong>Mini Quadcopter Drone</strong> is a scratch-built 250mm class quadcopter powered by a custom Arduino-based flight controller. Four 1000KV brushless motors driven by 20A ESCs provide the thrust, while an MPU6050 IMU feeds real-time gyroscope and accelerometer data to a hand-tuned PID controller running at 250Hz. An NRF24L01 radio link connects to a handheld transmitter providing throttle, pitch, roll, and yaw control. The entire system runs on a 3S 1500mAh LiPo battery, providing approximately 8 minutes of flight time.</p>
+            <h2>Key Features & Implementation</h2>
+            <ul>
+                <li><strong>250Hz PID Flight Controller:</strong> The Arduino's hardware timer is configured to interrupt at exactly 4ms intervals for the PID loop. Separate P, I, and D gains for roll, pitch, and yaw are individually tuned to provide stable hover and responsive directional control — a process that took over 30 test flights to optimise.</li>
+                <li><strong>Complementary Filter IMU Fusion:</strong> Raw gyroscope and accelerometer data from the MPU6050 are fused using a complementary filter (98% gyro / 2% accelerometer) to compute stable roll and pitch angles immune to both short-term gyro drift and accelerometer vibration noise.</li>
+                <li><strong>ESC Calibration & Arming:</strong> All four ESCs are calibrated simultaneously via a dedicated Arduino routine that sends max and min throttle pulses in sequence. A hardware arming safety switch prevents accidental motor start-up and must be physically toggled before the PID loop activates.</li>
+            </ul>
+            <h2>Challenges Solved</h2>
+            <p>High-frequency vibrations from the brushless motors corrupted the MPU6050's gyro readings, causing the drone to oscillate violently mid-flight. The solution was dual-layer vibration isolation: the MPU6050 was mounted on a 3D-printed foam-damped platform, and the PID derivative term had a low-pass filter applied at 80Hz — eliminating the oscillation while preserving responsive attitude control.</p>
+        </div>
+        <section class="related-projects">
+            <h2 class="section-title">Explore Related Projects</h2>
+            <p class="section-subtitle">Discover more of our robotics and IoT projects.</p>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="../assets/images/obstacle-avoider.webp" alt="Obstacle Avoiding Robot visual showcase" class="project-img" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3><a href="obstacle-avoider.html">Obstacle Avoiding Robot</a></h3>
+                        <p class="project-desc">Autonomous Arduino robot using three HC-SR04 ultrasonic sensors for 180° obstacle detection and avoidance.</p>
+                        <div class="project-footer">
+                            <span class="tag">Robotics</span>
+                            <a href="obstacle-avoider.html" class="project-link" aria-label="View Project Details">View Details →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="../assets/images/gesture-glove.webp" alt="Gesture Control Glove visual showcase" class="project-img" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3><a href="gesture-glove.html">Gesture Control Glove</a></h3>
+                        <p class="project-desc">Wearable Arduino glove with flex sensors and MPU6050 for wireless gesture-based robot control.</p>
+                        <div class="project-footer">
+                            <span class="tag">Wearable</span>
+                            <a href="gesture-glove.html" class="project-link" aria-label="View Project Details">View Details →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <span class="footer-text">© 2026 Sreehari Viju. Student Developer, Trivandrum India.</span>
+            <div class="footer-links">
+                <a href="../index.html">Home</a>
+                <a href="../index.html#projects">Projects</a>
+                <a href="../index.html#skills">Skills</a>
+            </div>
+        </div>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+</html>

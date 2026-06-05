@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Line Following Robot | The AI Explorer</title>
+    <link rel="icon" type="image/png" href="../assets/images/logo.webp">
+    <meta name="description" content="Autonomous line-following robot using IR sensors and PID control. Built by Sreehari Viju, a 9th grade student from Trivandrum.">
+    <meta name="keywords" content="line follower robot, IR sensor, PID control, autonomous robot, Arduino robotics Trivandrum">
+    <meta property="og:title" content="Line Following Robot | The AI Explorer">
+    <meta property="og:description" content="Autonomous robot navigating black-line tracks using IR sensor arrays and real-time PID control.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://sreehari-viju.github.io/The-AI-Explorer/projects/line-follower.html">
+    <meta property="og:image" content="https://sreehari-viju.github.io/The-AI-Explorer/assets/images/line-follower.png">
+    <meta property="og:locale" content="en_IN">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Line Following Robot | The AI Explorer">
+    <meta name="twitter:description" content="Autonomous robot navigating black-line tracks using IR sensor arrays and real-time PID control.">
+    <meta name="twitter:image" content="https://sreehari-viju.github.io/The-AI-Explorer/assets/images/line-follower.png">
+    <link rel="canonical" href="https://sreehari-viju.github.io/The-AI-Explorer/projects/line-follower.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="bg-glow"></div>
+    <header>
+        <nav>
+            <a href="../index.html" class="logo" aria-label="Go to Homepage"><img src="../assets/images/logo.webp" alt="The AI Explorer Logo" class="nav-logo"> The AI Explorer</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#skills">Skills</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="project-detail">
+        <span class="hero-badge animate-on-scroll">Autonomous Robotics</span>
+        <h1 class="animate-on-scroll">Line Following Robot</h1>
+        <div class="project-meta animate-on-scroll">
+            <div class="meta-item">
+                <span class="meta-label">Category</span>
+                <span class="meta-value">Autonomous Robotics</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Core Tech</span>
+                <span class="meta-value">Arduino, IR Sensors, PID</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Timeline</span>
+                <span class="meta-value">Spring 2026</span>
+            </div>
+        </div>
+        <img src="../assets/images/line-follower.webp" alt="Autonomous Line Following Robot on track" class="project-detail-img animate-on-scroll" loading="lazy">
+        <div class="project-text animate-on-scroll">
+            <h2>Project Overview</h2>
+            <p>The <strong>Line Following Robot</strong> is an autonomous vehicle that navigates a predefined black-line track using an array of infrared (IR) sensors. Powered by an Arduino UNO and driven by dual DC gear motors, the robot uses a PID (Proportional-Integral-Derivative) control algorithm to maintain smooth, accurate path tracking even at higher speeds and around tight corners.</p>
+            <h2>Key Features & Implementation</h2>
+            <ul>
+                <li><strong>5-Sensor IR Array:</strong> Five IR sensors sample the track at 100Hz, providing high-resolution positional error data for the PID controller to compute steering corrections.</li>
+                <li><strong>PID Control Algorithm:</strong> A tuned PID loop dynamically adjusts left/right motor speeds to minimize deviation from the track centerline with minimal oscillation.</li>
+                <li><strong>Speed Optimization:</strong> The robot automatically slows down when approaching sharp curves (high error) and accelerates on straight sections for optimal lap times.</li>
+            </ul>
+            <h2>Challenges Solved</h2>
+            <p>Tuning the PID constants (Kp, Ki, Kd) for stable tracking without oscillation required iterative manual testing. By implementing a real-time serial monitor readout and systematic Ziegler-Nichols tuning, optimal parameters were found that kept the robot on track even at maximum speed.</p>
+        </div>
+        <section class="related-projects">
+            <h2 class="section-title">Explore Related Projects</h2>
+            <p class="section-subtitle">Discover more of our robotics projects.</p>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="../assets/images/robotic-arm.webp" alt="Smart Robotic Arm visual showcase" class="project-img" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3><a href="robotic-arm.html">Smart Robotic Arm</a></h3>
+                        <p class="project-desc">Arduino-controlled 6-DOF robotic arm with servo motors for automated pick-and-place operations.</p>
+                        <div class="project-footer">
+                            <span class="tag">Arduino</span>
+                            <a href="robotic-arm.html" class="project-link" aria-label="View Project Details">View Details →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="../assets/images/automated-rover.webp" alt="Automated Rover visual showcase" class="project-img" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3><a href="automated-rover.html">Automated Rover</a></h3>
+                        <p class="project-desc">A terrain-navigating rover with obstacle avoidance and remote control capabilities.</p>
+                        <div class="project-footer">
+                            <span class="tag">Robotics</span>
+                            <a href="automated-rover.html" class="project-link" aria-label="View Project Details">View Details →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <span class="footer-text">© 2026 Sreehari Viju. Student Developer, Trivandrum India.</span>
+            <div class="footer-links">
+                <a href="../index.html">Home</a>
+                <a href="../index.html#projects">Projects</a>
+                <a href="../index.html#skills">Skills</a>
+            </div>
+        </div>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+</html>

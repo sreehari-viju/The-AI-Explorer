@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gesture Control Glove | The AI Explorer</title>
+    <link rel="icon" type="image/png" href="../assets/images/logo.webp">
+    <meta name="description" content="Wearable gesture control glove with flex sensors, MPU6050 IMU and Arduino Nano for wireless robot and device control, built by Sreehari Viju from Trivandrum.">
+    <meta name="keywords" content="gesture control glove, flex sensors, MPU6050, Arduino Nano, wearable robotics, student project, Trivandrum">
+    <meta property="og:title" content="Gesture Control Glove | The AI Explorer">
+    <meta property="og:description" content="Wearable gesture control glove using flex sensors and MPU6050 IMU to wirelessly control robots and devices with hand movements.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://sreehari-viju.github.io/The-AI-Explorer/projects/gesture-glove.html">
+    <meta property="og:image" content="https://sreehari-viju.github.io/The-AI-Explorer/assets/images/gesture-glove.png">
+    <meta property="og:locale" content="en_IN">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Gesture Control Glove | The AI Explorer">
+    <meta name="twitter:description" content="Wearable gesture control glove using flex sensors and MPU6050 IMU for wireless robot control.">
+    <meta name="twitter:image" content="https://sreehari-viju.github.io/The-AI-Explorer/assets/images/gesture-glove.png">
+    <link rel="canonical" href="https://sreehari-viju.github.io/The-AI-Explorer/projects/gesture-glove.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "Gesture Control Glove",
+      "author": {
+        "@type": "Person",
+        "name": "Sreehari Viju",
+        "address": { "@type": "Place", "name": "Trivandrum, India" }
+      },
+      "description": "Wearable gesture control glove using flex sensors and MPU6050 IMU for wireless robot and device control."
+    }
+    </script>
+</head>
+<body>
+    <div class="bg-glow"></div>
+    <header>
+        <nav>
+            <a href="../index.html" class="logo" aria-label="Go to Homepage"><img src="../assets/images/logo.webp" alt="The AI Explorer Logo" class="nav-logo"> The AI Explorer</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#skills">Skills</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="project-detail">
+        <span class="hero-badge animate-on-scroll">Wearable Tech</span>
+        <h1 class="animate-on-scroll">Gesture Control Glove</h1>
+        <div class="project-meta animate-on-scroll">
+            <div class="meta-item">
+                <span class="meta-label">Category</span>
+                <span class="meta-value">Wearable Tech</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Core Tech</span>
+                <span class="meta-value">Arduino Nano, MPU6050, NRF24L01</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Timeline</span>
+                <span class="meta-value">Winter 2025</span>
+            </div>
+        </div>
+        <img src="../assets/images/gesture-glove.webp" alt="Gesture Control Glove with flex sensors and MPU6050" class="project-detail-img animate-on-scroll" loading="lazy">
+        <div class="project-text animate-on-scroll">
+            <h2>Project Overview</h2>
+            <p>The <strong>Gesture Control Glove</strong> is a wearable human-machine interface that translates natural hand movements into wireless commands for controlling robots and other devices. Five flex sensors mounted along each finger joint output variable resistance values read by an Arduino Nano's ADC. An MPU6050 IMU captures wrist tilt angles in three axes. An NRF24L01 radio module transmits the gesture data packet wirelessly to a receiver robot at ranges up to 100 metres.</p>
+            <h2>Key Features & Implementation</h2>
+            <ul>
+                <li><strong>10-Channel Gesture Reading:</strong> Five flex sensors provide finger curl data (0–90°) while the MPU6050 supplies pitch, roll, and yaw from the DMP (Digital Motion Processor), giving 8 independent input channels fused into a compact 12-byte command packet transmitted at 50Hz.</li>
+                <li><strong>Calibrated Gesture Mapping:</strong> A calibration routine run on startup maps each sensor's raw ADC range to normalized angles. Gesture thresholds (e.g., all fingers closed = stop, index extended = forward) are configurable via serial monitor without firmware recompilation.</li>
+                <li><strong>NRF24L01 Wireless Link:</strong> The 2.4GHz NRF24L01+ module provides a reliable full-duplex link with auto-acknowledgement and automatic retransmission, ensuring zero command loss even at maximum range.</li>
+            </ul>
+            <h2>Challenges Solved</h2>
+            <p>Flex sensor readings drifted significantly with temperature changes, making consistent gesture detection unreliable. A runtime drift compensation routine averages idle-state sensor values every 10 seconds and subtracts the drift offset from live readings, maintaining ±2° accuracy throughout extended use sessions.</p>
+        </div>
+        <section class="related-projects">
+            <h2 class="section-title">Explore Related Projects</h2>
+            <p class="section-subtitle">Discover more of our robotics and IoT projects.</p>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="../assets/images/robotic-arm.webp" alt="Smart Robotic Arm visual showcase" class="project-img" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3><a href="robotic-arm.html">Smart Robotic Arm</a></h3>
+                        <p class="project-desc">Arduino-controlled 6-DOF robotic arm with servo motors for automated pick-and-place operations.</p>
+                        <div class="project-footer">
+                            <span class="tag">Arduino</span>
+                            <a href="robotic-arm.html" class="project-link" aria-label="View Project Details">View Details →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="../assets/images/bluetooth-car.webp" alt="Bluetooth RC Car visual showcase" class="project-img" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3><a href="bluetooth-car.html">Bluetooth RC Car</a></h3>
+                        <p class="project-desc">Arduino-based Bluetooth-controlled RC car with variable speed PWM and a custom Android controller app.</p>
+                        <div class="project-footer">
+                            <span class="tag">Arduino</span>
+                            <a href="bluetooth-car.html" class="project-link" aria-label="View Project Details">View Details →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <span class="footer-text">© 2026 Sreehari Viju. Student Developer, Trivandrum India.</span>
+            <div class="footer-links">
+                <a href="../index.html">Home</a>
+                <a href="../index.html#projects">Projects</a>
+                <a href="../index.html#skills">Skills</a>
+            </div>
+        </div>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+</html>

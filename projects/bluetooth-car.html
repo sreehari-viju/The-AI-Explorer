@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bluetooth RC Car Project | The AI Explorer</title>
+    <link rel="icon" type="image/png" href="../assets/images/logo.webp">
+    <meta name="description" content="Arduino-based Bluetooth-controlled RC car built by Sreehari Viju, a 9th grade student from Trivandrum. Controlled via a custom Android app using HC-05 module.">
+    <meta name="keywords" content="Bluetooth RC car, Arduino HC-05, remote control car, student robotics project, Trivandrum">
+    <meta property="og:title" content="Bluetooth RC Car Project | The AI Explorer">
+    <meta property="og:description" content="Arduino-based Bluetooth RC car controlled via a custom Android app using the HC-05 module.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://sreehari-viju.github.io/The-AI-Explorer/projects/bluetooth-car.html">
+    <meta property="og:image" content="https://sreehari-viju.github.io/The-AI-Explorer/assets/images/bluetooth-car.png">
+    <meta property="og:locale" content="en_IN">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bluetooth RC Car Project | The AI Explorer">
+    <meta name="twitter:description" content="Arduino-based Bluetooth RC car controlled via a custom Android app using the HC-05 module.">
+    <meta name="twitter:image" content="https://sreehari-viju.github.io/The-AI-Explorer/assets/images/bluetooth-car.png">
+    <link rel="canonical" href="https://sreehari-viju.github.io/The-AI-Explorer/projects/bluetooth-car.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "Bluetooth RC Car Project",
+      "author": {
+        "@type": "Person",
+        "name": "Sreehari Viju",
+        "address": { "@type": "Place", "name": "Trivandrum, India" }
+      },
+      "description": "Arduino-based Bluetooth-controlled RC car using HC-05 module and a custom Android app."
+    }
+    </script>
+</head>
+<body>
+    <div class="bg-glow"></div>
+    <header>
+        <nav>
+            <a href="../index.html" class="logo" aria-label="Go to Homepage"><img src="../assets/images/logo.webp" alt="The AI Explorer Logo" class="nav-logo"> The AI Explorer</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#skills">Skills</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="project-detail">
+        <span class="hero-badge animate-on-scroll">Wireless Robotics</span>
+        <h1 class="animate-on-scroll">Bluetooth RC Car</h1>
+        <div class="project-meta animate-on-scroll">
+            <div class="meta-item">
+                <span class="meta-label">Category</span>
+                <span class="meta-value">Wireless Robotics</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Core Tech</span>
+                <span class="meta-value">Arduino, HC-05, L298N Driver</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Timeline</span>
+                <span class="meta-value">Spring 2026</span>
+            </div>
+        </div>
+        <img src="../assets/images/bluetooth-car.webp" alt="Bluetooth RC Car with Arduino and HC-05 module" class="project-detail-img animate-on-scroll" loading="lazy">
+        <div class="project-text animate-on-scroll">
+            <h2>Project Overview</h2>
+            <p>The <strong>Bluetooth RC Car</strong> is a four-wheeled robotic vehicle controlled wirelessly via Bluetooth using an HC-05 module paired with a custom-built Android controller app. Powered by an Arduino UNO and an L298N dual motor driver, the car supports real-time directional commands, variable speed control, and a horn feature — all transmitted over a stable 10-metre Bluetooth range.</p>
+            <h2>Key Features & Implementation</h2>
+            <ul>
+                <li><strong>Wireless Bluetooth Control:</strong> The HC-05 module communicates with a smartphone over RFCOMM serial protocol, receiving single-character command packets at 9600 baud for near-zero latency response.</li>
+                <li><strong>Variable Speed with PWM:</strong> The L298N driver receives PWM signals from the Arduino, allowing smooth acceleration and deceleration curves rather than abrupt on/off motor switching.</li>
+                <li><strong>Custom Android App:</strong> A dedicated app built with MIT App Inventor provides a joystick-style interface for intuitive directional control and a turbo-boost button for max speed bursts.</li>
+            </ul>
+            <h2>Challenges Solved</h2>
+            <p>Bluetooth signal drops caused erratic motor behaviour when the connection was momentarily lost. A watchdog timer was implemented on the Arduino that automatically halts all motors if no valid command packet is received within 300ms, ensuring the car never runs away uncontrolled.</p>
+        </div>
+        <section class="related-projects">
+            <h2 class="section-title">Explore Related Projects</h2>
+            <p class="section-subtitle">Discover more of our robotics and IoT projects.</p>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="../assets/images/line-follower.webp" alt="Line Following Robot visual showcase" class="project-img" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3><a href="line-follower.html">Line Following Robot</a></h3>
+                        <p class="project-desc">Autonomous robot navigating black-line tracks using a 5-sensor IR array and real-time PID speed control.</p>
+                        <div class="project-footer">
+                            <span class="tag">Robotics</span>
+                            <a href="line-follower.html" class="project-link" aria-label="View Project Details">View Details →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="../assets/images/robotic-arm.webp" alt="Smart Robotic Arm visual showcase" class="project-img" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3><a href="robotic-arm.html">Smart Robotic Arm</a></h3>
+                        <p class="project-desc">Arduino-controlled 6-DOF robotic arm with servo motors for automated pick-and-place operations.</p>
+                        <div class="project-footer">
+                            <span class="tag">Arduino</span>
+                            <a href="robotic-arm.html" class="project-link" aria-label="View Project Details">View Details →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <span class="footer-text">© 2026 Sreehari Viju. Student Developer, Trivandrum India.</span>
+            <div class="footer-links">
+                <a href="../index.html">Home</a>
+                <a href="../index.html#projects">Projects</a>
+                <a href="../index.html#skills">Skills</a>
+            </div>
+        </div>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automatic Pet Feeder | The AI Explorer</title>
+    <link rel="icon" type="image/png" href="../assets/images/logo.webp">
+    <meta name="description" content="ESP8266-based automatic pet feeder with servo-driven portion control, scheduled feeding, and real-time mobile notifications, built by Sreehari Viju from Trivandrum.">
+    <meta name="keywords" content="automatic pet feeder, ESP8266 servo, IoT pet feeder, scheduled feeding, student project, Trivandrum">
+    <meta property="og:title" content="Automatic Pet Feeder | The AI Explorer">
+    <meta property="og:description" content="Smart automatic pet feeder with ESP8266, servo motor, scheduled feeding times, and Telegram push notifications.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://sreehari-viju.github.io/The-AI-Explorer/projects/pet-feeder.html">
+    <meta property="og:image" content="https://sreehari-viju.github.io/The-AI-Explorer/assets/images/pet-feeder.png">
+    <meta property="og:locale" content="en_IN">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Automatic Pet Feeder | The AI Explorer">
+    <meta name="twitter:description" content="Smart automatic pet feeder with ESP8266, scheduled feeding, and Telegram notifications.">
+    <meta name="twitter:image" content="https://sreehari-viju.github.io/The-AI-Explorer/assets/images/pet-feeder.png">
+    <link rel="canonical" href="https://sreehari-viju.github.io/The-AI-Explorer/projects/pet-feeder.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "Automatic Pet Feeder",
+      "author": {
+        "@type": "Person",
+        "name": "Sreehari Viju",
+        "address": { "@type": "Place", "name": "Trivandrum, India" }
+      },
+      "description": "ESP8266-based automatic pet feeder with servo portion control, NTP-synced scheduling, and Telegram notifications."
+    }
+    </script>
+</head>
+<body>
+    <div class="bg-glow"></div>
+    <header>
+        <nav>
+            <a href="../index.html" class="logo" aria-label="Go to Homepage"><img src="../assets/images/logo.webp" alt="The AI Explorer Logo" class="nav-logo"> The AI Explorer</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#skills">Skills</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="project-detail">
+        <span class="hero-badge animate-on-scroll">IoT Automation</span>
+        <h1 class="animate-on-scroll">Automatic Pet Feeder</h1>
+        <div class="project-meta animate-on-scroll">
+            <div class="meta-item">
+                <span class="meta-label">Category</span>
+                <span class="meta-value">IoT Automation</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Core Tech</span>
+                <span class="meta-value">ESP8266, Servo Motor, NTP</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Timeline</span>
+                <span class="meta-value">Autumn 2025</span>
+            </div>
+        </div>
+        <img src="../assets/images/pet-feeder.webp" alt="Automatic Pet Feeder with ESP8266 and servo motor" class="project-detail-img animate-on-scroll" loading="lazy">
+        <div class="project-text animate-on-scroll">
+            <h2>Project Overview</h2>
+            <p>The <strong>Automatic Pet Feeder</strong> is a Wi-Fi connected device built around an ESP8266 that dispenses precise portions of pet food on a programmable schedule. A servo-motor-driven auger mechanism rotates for a calibrated duration to deliver consistent portion sizes. The device synchronises its clock with an NTP server over Wi-Fi, ensuring feeding times are accurate even after power cuts. A load sensor in the bowl detects whether food has been eaten, logging meal data to the cloud.</p>
+            <h2>Key Features & Implementation</h2>
+            <ul>
+                <li><strong>NTP-Synced Scheduling:</strong> Up to 4 feeding times per day can be configured through a web interface. The ESP8266 compares the NTP-synced RTC time against the schedule every minute and triggers the servo when a match is found — accurate to within ±5 seconds regardless of network latency.</li>
+                <li><strong>Portion Calibration:</strong> The servo auger was calibrated to dispense exactly 10g of dry kibble per revolution at 30° rotation increments. Portion size is configurable from the web UI in 10g steps up to 100g per meal without any firmware changes.</li>
+                <li><strong>Bowl Load Sensing:</strong> A HX711 load cell amplifier connected to a 1kg load sensor detects remaining food weight after each dispense and pushes the reading to a Telegram bot — alerting when the bowl has not been touched within 2 hours of a scheduled feeding.</li>
+            </ul>
+            <h2>Challenges Solved</h2>
+            <p>The servo motor drew enough current during stall conditions to brown out the ESP8266 over USB power. Separating the servo onto its own 5V 2A regulated supply with a common ground resolved all random reboots, and added a flyback diode across the servo supply lines to protect the ESP8266's GPIO from back-EMF spikes.</p>
+        </div>
+        <section class="related-projects">
+            <h2 class="section-title">Explore Related Projects</h2>
+            <p class="section-subtitle">Discover more of our robotics and IoT projects.</p>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="../assets/images/plant-watering.webp" alt="Smart Plant Watering System visual showcase" class="project-img" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3><a href="plant-watering.html">Smart Plant Watering System</a></h3>
+                        <p class="project-desc">ESP8266-based automatic irrigation system with soil moisture sensors and real-time mobile alerts via MQTT.</p>
+                        <div class="project-footer">
+                            <span class="tag">ESP8266</span>
+                            <a href="plant-watering.html" class="project-link" aria-label="View Project Details">View Details →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="../assets/images/home-automation.webp" alt="Home Automation visual showcase" class="project-img" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3><a href="home-automation.html">Home Automation System</a></h3>
+                        <p class="project-desc">ESP8266-based smart home controller managing lights, fans, and appliances via voice and app commands.</p>
+                        <div class="project-footer">
+                            <span class="tag">ESP8266</span>
+                            <a href="home-automation.html" class="project-link" aria-label="View Project Details">View Details →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <span class="footer-text">© 2026 Sreehari Viju. Student Developer, Trivandrum India.</span>
+            <div class="footer-links">
+                <a href="../index.html">Home</a>
+                <a href="../index.html#projects">Projects</a>
+                <a href="../index.html#skills">Skills</a>
+            </div>
+        </div>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+</html>

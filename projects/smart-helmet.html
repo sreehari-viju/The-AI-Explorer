@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Safety Helmet | The AI Explorer</title>
+    <link rel="icon" type="image/png" href="../assets/images/logo.webp">
+    <meta name="description" content="Arduino-powered smart safety helmet with MPU6050 impact detection, GSM emergency alerts, and gas sensor, built by Sreehari Viju from Trivandrum.">
+    <meta name="keywords" content="smart safety helmet, Arduino MPU6050, GSM emergency alert, worker safety IoT, student project, Trivandrum">
+    <meta property="og:title" content="Smart Safety Helmet | The AI Explorer">
+    <meta property="og:description" content="Arduino-powered smart safety helmet detecting impacts and gas hazards with instant GSM emergency SMS alerts.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://sreehari-viju.github.io/The-AI-Explorer/projects/smart-helmet.html">
+    <meta property="og:image" content="https://sreehari-viju.github.io/The-AI-Explorer/assets/images/smart-helmet.png">
+    <meta property="og:locale" content="en_IN">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Smart Safety Helmet | The AI Explorer">
+    <meta name="twitter:description" content="Arduino smart safety helmet with impact detection and GSM emergency alerts.">
+    <meta name="twitter:image" content="https://sreehari-viju.github.io/The-AI-Explorer/assets/images/smart-helmet.png">
+    <link rel="canonical" href="https://sreehari-viju.github.io/The-AI-Explorer/projects/smart-helmet.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "Smart Safety Helmet",
+      "author": {
+        "@type": "Person",
+        "name": "Sreehari Viju",
+        "address": { "@type": "Place", "name": "Trivandrum, India" }
+      },
+      "description": "Arduino-powered smart safety helmet with impact detection, gas sensing, and GSM emergency alerts for worker safety."
+    }
+    </script>
+</head>
+<body>
+    <div class="bg-glow"></div>
+    <header>
+        <nav>
+            <a href="../index.html" class="logo" aria-label="Go to Homepage"><img src="../assets/images/logo.webp" alt="The AI Explorer Logo" class="nav-logo"> The AI Explorer</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#skills">Skills</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="project-detail">
+        <span class="hero-badge animate-on-scroll">Safety Tech</span>
+        <h1 class="animate-on-scroll">Smart Safety Helmet</h1>
+        <div class="project-meta animate-on-scroll">
+            <div class="meta-item">
+                <span class="meta-label">Category</span>
+                <span class="meta-value">Safety Tech</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Core Tech</span>
+                <span class="meta-value">Arduino, MPU6050, SIM800L, MQ-2</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Timeline</span>
+                <span class="meta-value">Winter 2025</span>
+            </div>
+        </div>
+        <img src="../assets/images/smart-helmet.webp" alt="Smart Safety Helmet with Arduino and impact detection" class="project-detail-img animate-on-scroll" loading="lazy">
+        <div class="project-text animate-on-scroll">
+            <h2>Project Overview</h2>
+            <p>The <strong>Smart Safety Helmet</strong> is a worker safety device embedded inside a standard ABS construction helmet. An Arduino UNO monitors an MPU6050 accelerometer for impact events, an MQ-2 sensor for combustible gas and smoke, and a DHT22 for ambient temperature. On detecting a hazard, a SIM800L GSM module immediately sends an SMS alert with the event type to a pre-configured emergency contact number. A buzzer and red LEDs on the helmet's exterior provide local visual and audible warnings.</p>
+            <h2>Key Features & Implementation</h2>
+            <ul>
+                <li><strong>Impact Threshold Detection:</strong> The MPU6050's raw accelerometer data is sampled at 200Hz. A peak-detection algorithm flags any acceleration event exceeding 4G in any axis as a potential impact, triggering an emergency alert after a 500ms confirmation window to avoid false positives from normal bumps.</li>
+                <li><strong>Dual-Hazard Gas Sensing:</strong> The MQ-2 sensor's analogue output is mapped to LPG and smoke concentration levels. Thresholds are set at 300ppm for LPG and 150ppm for smoke — both well below dangerous occupational exposure limits — giving early warnings before conditions become critical.</li>
+                <li><strong>GSM Emergency SMS:</strong> The SIM800L sends a formatted SMS within 3 seconds of a trigger event containing the hazard type, a severity level, and a "WORKER ALERT" prefix — compatible with any standard mobile number including feature phones used by site supervisors.</li>
+            </ul>
+            <h2>Challenges Solved</h2>
+            <p>The SIM800L drew 2A current spikes during GSM transmission, causing the Arduino to reboot from the shared USB supply. Separating it onto a dedicated 3.7V 18650 LiPo cell with a proper voltage regulator and adding a 1000µF bulk capacitor at its supply pins fully resolved all brownout resets during SMS transmission.</p>
+        </div>
+        <section class="related-projects">
+            <h2 class="section-title">Explore Related Projects</h2>
+            <p class="section-subtitle">Discover more of our robotics and IoT projects.</p>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="../assets/images/fire-detection.webp" alt="Smart Fire Detection visual showcase" class="project-img" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3><a href="fire-detection.html">Smart Fire Detection System</a></h3>
+                        <p class="project-desc">Real-time emergency scanning using sophisticated telemetry arrays and automated NodeMCU alarms for early warning.</p>
+                        <div class="project-footer">
+                            <span class="tag">IoT</span>
+                            <a href="fire-detection.html" class="project-link" aria-label="View Project Details">View Details →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="../assets/images/rfid-lock.webp" alt="RFID Security Lock visual showcase" class="project-img" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3><a href="rfid-lock.html">RFID Security Lock</a></h3>
+                        <p class="project-desc">RFID-based door access control system with Arduino, LCD display and dual-mode keypad authentication.</p>
+                        <div class="project-footer">
+                            <span class="tag">Arduino</span>
+                            <a href="rfid-lock.html" class="project-link" aria-label="View Project Details">View Details →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <span class="footer-text">© 2026 Sreehari Viju. Student Developer, Trivandrum India.</span>
+            <div class="footer-links">
+                <a href="../index.html">Home</a>
+                <a href="../index.html#projects">Projects</a>
+                <a href="../index.html#skills">Skills</a>
+            </div>
+        </div>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+</html>
