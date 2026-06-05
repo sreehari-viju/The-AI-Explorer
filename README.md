@@ -1,50 +1,88 @@
-# The AI Explorer - the-ai-explorer
+# The AI Explorer
 
-> A sleek, Cybernetic-Industrial styled technical the-ai-explorer for a student developer specializing in AI, IoT, and Robotics.
+> A sleek, Cybernetic-Industrial styled portfolio for Sreehari Viju — a 9th grade student developer from Trivandrum specializing in AI, IoT, and Robotics.
+
+**Live Site:** [https://sreehari-viju.github.io/The-AI-Explorer/](https://sreehari-viju.github.io/The-AI-Explorer/)
+
+---
 
 ## 🚀 Overview
 
-This repository contains the source code for my personal the-ai-explorer website, "The AI Explorer". It showcases my technical expertise, highlighted projects (like the Jarvis AI Assistant and Smart Fire Detection System), and provides a way to get in touch for collaborations.
+This repository contains the source code for my personal portfolio website, **The AI Explorer**. It showcases 24+ technical projects spanning Arduino, ESP8266/ESP32, and Raspberry Pi — including robotics, IoT systems, AI assistants, and aerial drones.
 
-**Live Site:** [https://sreehari-rpi.github.io/the-ai-explorer/](https://sreehari-rpi.github.io/the-ai-explorer/)
+---
 
 ## 🛠️ Built With
 
-*   **HTML5** - Semantic structure and SEO-optimized architecture.
-*   **Vanilla CSS3** - Custom properties, CSS grid/flexbox, dynamic glowing background effects, and responsive design. No heavy CSS frameworks.
-*   **Vanilla JavaScript** - Intersection Observers for scroll animations, custom clipboard integration for the contact module, and dynamic UI elements.
+- **HTML5** — Semantic structure and SEO-optimized architecture
+- **Vanilla CSS3** — Custom properties, CSS Grid/Flexbox, glassmorphism effects, and responsive design. No CSS frameworks
+- **Vanilla JavaScript** — Intersection Observers for scroll animations and dynamic UI elements
+- **WebP Images** — All project images compressed to WebP for fast load times (80–94% smaller than PNG)
+
+---
 
 ## ✨ Features
 
-*   **Cybernetic Aesthetics:** A high-end dark mode theme with glassmorphism, glowing accents, and modern typography (Google Fonts 'Outfit').
-*   **Fully Responsive:** Fluid layouts that look flawless on desktop, tablet, and mobile browsers.
-*   **SEO Optimized:** Comprehensive Open Graph tags, meta descriptions, and Schema.org JSON-LD structured data.
-*   **Accessibility (a11y) Compliant:** ARIA labels on visual elements and icons for screen reader support.
-*   **Static & Fast:** No backend database required. Extremely fast load times and optimized delivery.
+- **Cybernetic Aesthetics** — Dark mode theme with glassmorphism, glowing accents, and Outfit typeface
+- **Fully Responsive** — Fluid layouts across desktop, tablet, and mobile
+- **SEO Optimized** — Open Graph tags, meta descriptions, canonical URLs, Schema.org JSON-LD, and full `sitemap.xml`
+- **Fast Loading** — WebP images, lazy loading, and zero JavaScript frameworks
+- **24 Project Pages** — Each with detailed write-ups, key features, and related project links
+- **Accessibility** — ARIA labels on all interactive and visual elements
+
+---
 
 ## 📁 Directory Structure
 
 ```text
 /
-├── index.html            # Main the-ai-explorer landing page
-├── 404.html              # Custom error page
-├── style.css             # Global stylesheet and UI theme
-├── script.js             # Interaction logic and animations
-├── sitemap.xml           # XML sitemap for search engine crawlers
-├── robots.txt            # Crawler instructions
-├── /projects/            # Detailed project spotlight pages
+├── index.html              # Main portfolio landing page
+├── 404.html                # Custom error page
+├── contact.html            # Contact page
+├── style.css               # Global stylesheet and UI theme
+├── script.js               # Animations and interaction logic
+├── sitemap.xml             # Full XML sitemap for all 26 URLs
+├── robots.txt              # Crawler instructions
+├── /projects/              # 24 individual project spotlight pages
 │   ├── jarvis-ai.html
 │   ├── fire-detection.html
-│   └── ...
+│   ├── iot-dashboard.html
+│   ├── robotic-arm.html
+│   ├── bluetooth-car.html
+│   ├── home-automation.html
+│   ├── plant-watering.html
+│   ├── rfid-lock.html
+│   ├── line-follower.html
+│   ├── weather-station.html
+│   ├── solar-tracker.html
+│   ├── ultrasonic-meter.html
+│   ├── led-matrix.html
+│   ├── automated-rover.html
+│   ├── obstacle-avoider.html
+│   ├── gps-tracker.html
+│   ├── smart-doorbell.html
+│   ├── gesture-glove.html
+│   ├── voice-led.html
+│   ├── pet-feeder.html
+│   ├── smart-helmet.html
+│   ├── smart-clock.html
+│   ├── security-camera.html
+│   └── mini-drone.html
 └── /assets/
-    └── /images/          # Logos and project thumbnails
+    └── /images/            # WebP project thumbnails and logo
 ```
+
+---
 
 ## 👨‍💻 Author
 
 **Sreehari Viju**
-*   GitHub: [@Sreehari-rpi](https://github.com/Sreehari-rpi)
+- GitHub: [@Sreehari-rpi](https://github.com/Sreehari-rpi)
+- Email: sreehariviju.rpi@gmail.com
+- Location: Trivandrum, Kerala, India
+
+---
 
 ## 📄 License
 
-This project is intended for personal the-ai-explorer use.
+This project is intended for personal portfolio use.

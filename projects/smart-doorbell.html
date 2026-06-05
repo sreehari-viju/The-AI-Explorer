@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Video Doorbell | The AI Explorer</title>
+    <link rel="icon" type="image/png" href="../assets/images/logo.webp">
+    <meta name="description" content="Raspberry Pi smart video doorbell with Pi Camera, motion detection, and live mobile viewing, built by Sreehari Viju, a 9th grade student from Trivandrum.">
+    <meta name="keywords" content="smart doorbell, Raspberry Pi camera, motion detection, video doorbell, student IoT project, Trivandrum">
+    <meta property="og:title" content="Smart Video Doorbell | The AI Explorer">
+    <meta property="og:description" content="Raspberry Pi-powered smart video doorbell with motion-triggered recording and live mobile viewing over local Wi-Fi.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://sreehari-viju.github.io/The-AI-Explorer/projects/smart-doorbell.html">
+    <meta property="og:image" content="https://sreehari-viju.github.io/The-AI-Explorer/assets/images/smart-doorbell.png">
+    <meta property="og:locale" content="en_IN">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Smart Video Doorbell | The AI Explorer">
+    <meta name="twitter:description" content="Raspberry Pi smart doorbell with motion detection and live video streaming.">
+    <meta name="twitter:image" content="https://sreehari-viju.github.io/The-AI-Explorer/assets/images/smart-doorbell.png">
+    <link rel="canonical" href="https://sreehari-viju.github.io/The-AI-Explorer/projects/smart-doorbell.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "Smart Video Doorbell",
+      "author": {
+        "@type": "Person",
+        "name": "Sreehari Viju",
+        "address": { "@type": "Place", "name": "Trivandrum, India" }
+      },
+      "description": "Raspberry Pi-powered smart video doorbell with motion detection, live streaming, and push notifications."
+    }
+    </script>
+</head>
+<body>
+    <div class="bg-glow"></div>
+    <header>
+        <nav>
+            <a href="../index.html" class="logo" aria-label="Go to Homepage"><img src="../assets/images/logo.webp" alt="The AI Explorer Logo" class="nav-logo"> The AI Explorer</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#skills">Skills</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="project-detail">
+        <span class="hero-badge animate-on-scroll">Smart Home</span>
+        <h1 class="animate-on-scroll">Smart Video Doorbell</h1>
+        <div class="project-meta animate-on-scroll">
+            <div class="meta-item">
+                <span class="meta-label">Category</span>
+                <span class="meta-value">Smart Home</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Core Tech</span>
+                <span class="meta-value">Raspberry Pi, Pi Camera, Python</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Timeline</span>
+                <span class="meta-value">Spring 2026</span>
+            </div>
+        </div>
+        <img src="../assets/images/smart-doorbell.webp" alt="Smart Video Doorbell with Raspberry Pi and Pi Camera" class="project-detail-img animate-on-scroll" loading="lazy">
+        <div class="project-text animate-on-scroll">
+            <h2>Project Overview</h2>
+            <p>The <strong>Smart Video Doorbell</strong> transforms a standard Raspberry Pi Zero W and Pi Camera Module V2 into a fully functional smart doorbell. A PIR motion sensor triggers the camera to begin recording and simultaneously streams a live MJPEG feed accessible from any device on the local network. A physical doorbell button triggers an audio chime played through a connected speaker while sending a Telegram notification with a captured snapshot.</p>
+            <h2>Key Features & Implementation</h2>
+            <ul>
+                <li><strong>Motion-Triggered Recording:</strong> A PIR sensor wakes the system from low-power idle mode. Python's picamera library begins capturing a 30-second H.264 video clip stored locally with a timestamped filename, building an automatic visitor log.</li>
+                <li><strong>MJPEG Live Stream:</strong> A lightweight Python Flask server serves a continuous MJPEG stream at 720p/15fps accessible via browser on any LAN device — no app installation required for viewing.</li>
+                <li><strong>Telegram Bot Alerts:</strong> On doorbell press, a Telegram bot sends an instant push notification with a high-resolution JPEG snapshot to the homeowner's phone within 2 seconds of the button press.</li>
+            </ul>
+            <h2>Challenges Solved</h2>
+            <p>Pi Zero W's limited processing power caused frame drops during simultaneous recording and streaming. Implementing a separate thread for the MJPEG server and using hardware-accelerated H.264 encoding via the GPU pipeline resolved the bottleneck, maintaining smooth 15fps streams without dropped frames.</p>
+        </div>
+        <section class="related-projects">
+            <h2 class="section-title">Explore Related Projects</h2>
+            <p class="section-subtitle">Discover more of our robotics and IoT projects.</p>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="../assets/images/security-camera.webp" alt="Pi Security Camera visual showcase" class="project-img" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3><a href="security-camera.html">Pi Security Camera</a></h3>
+                        <p class="project-desc">Raspberry Pi-based multi-feed security camera system with motion detection and live remote viewing.</p>
+                        <div class="project-footer">
+                            <span class="tag">Raspberry Pi</span>
+                            <a href="security-camera.html" class="project-link" aria-label="View Project Details">View Details →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="../assets/images/home-automation.webp" alt="Home Automation visual showcase" class="project-img" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3><a href="home-automation.html">Home Automation System</a></h3>
+                        <p class="project-desc">ESP8266-based smart home controller managing lights, fans, and appliances via voice and app commands.</p>
+                        <div class="project-footer">
+                            <span class="tag">ESP8266</span>
+                            <a href="home-automation.html" class="project-link" aria-label="View Project Details">View Details →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <span class="footer-text">© 2026 Sreehari Viju. Student Developer, Trivandrum India.</span>
+            <div class="footer-links">
+                <a href="../index.html">Home</a>
+                <a href="../index.html#projects">Projects</a>
+                <a href="../index.html#skills">Skills</a>
+            </div>
+        </div>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+</html>

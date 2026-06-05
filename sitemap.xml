@@ -1,27 +1,164 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <!-- Main Pages -->
     <url>
-        <loc>https://sreehari-viju.github.io/the-ai-explorer/index.html</loc>
-        <lastmod>2026-05-04</lastmod>
+        <loc>https://sreehari-viju.github.io/The-AI-Explorer/</loc>
+        <lastmod>2026-06-05</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://sreehari-viju.github.io/the-ai-explorer/projects/jarvis-ai.html</loc>
-        <lastmod>2026-05-04</lastmod>
+        <loc>https://sreehari-viju.github.io/The-AI-Explorer/index.html</loc>
+        <lastmod>2026-06-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- Project Pages -->
+    <url>
+        <loc>https://sreehari-viju.github.io/The-AI-Explorer/projects/jarvis-ai.html</loc>
+        <lastmod>2026-06-05</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://sreehari-viju.github.io/the-ai-explorer/projects/fire-detection.html</loc>
-        <lastmod>2026-05-04</lastmod>
+        <loc>https://sreehari-viju.github.io/The-AI-Explorer/projects/fire-detection.html</loc>
+        <lastmod>2026-06-05</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://sreehari-viju.github.io/the-ai-explorer/projects/iot-dashboard.html</loc>
-        <lastmod>2026-05-04</lastmod>
+        <loc>https://sreehari-viju.github.io/The-AI-Explorer/projects/iot-dashboard.html</loc>
+        <lastmod>2026-06-05</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
+    <url>
+        <loc>https://sreehari-viju.github.io/The-AI-Explorer/projects/robotic-arm.html</loc>
+        <lastmod>2026-06-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sreehari-viju.github.io/The-AI-Explorer/projects/plant-watering.html</loc>
+        <lastmod>2026-06-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sreehari-viju.github.io/The-AI-Explorer/projects/rfid-lock.html</loc>
+        <lastmod>2026-06-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sreehari-viju.github.io/The-AI-Explorer/projects/line-follower.html</loc>
+        <lastmod>2026-06-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sreehari-viju.github.io/The-AI-Explorer/projects/weather-station.html</loc>
+        <lastmod>2026-06-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sreehari-viju.github.io/The-AI-Explorer/projects/bluetooth-car.html</loc>
+        <lastmod>2026-06-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sreehari-viju.github.io/The-AI-Explorer/projects/home-automation.html</loc>
+        <lastmod>2026-06-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sreehari-viju.github.io/The-AI-Explorer/projects/solar-tracker.html</loc>
+        <lastmod>2026-06-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sreehari-viju.github.io/The-AI-Explorer/projects/ultrasonic-meter.html</loc>
+        <lastmod>2026-06-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sreehari-viju.github.io/The-AI-Explorer/projects/led-matrix.html</loc>
+        <lastmod>2026-06-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sreehari-viju.github.io/The-AI-Explorer/projects/automated-rover.html</loc>
+        <lastmod>2026-06-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sreehari-viju.github.io/The-AI-Explorer/projects/obstacle-avoider.html</loc>
+        <lastmod>2026-06-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sreehari-viju.github.io/The-AI-Explorer/projects/gps-tracker.html</loc>
+        <lastmod>2026-06-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sreehari-viju.github.io/The-AI-Explorer/projects/smart-doorbell.html</loc>
+        <lastmod>2026-06-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sreehari-viju.github.io/The-AI-Explorer/projects/gesture-glove.html</loc>
+        <lastmod>2026-06-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sreehari-viju.github.io/The-AI-Explorer/projects/voice-led.html</loc>
+        <lastmod>2026-06-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sreehari-viju.github.io/The-AI-Explorer/projects/pet-feeder.html</loc>
+        <lastmod>2026-06-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sreehari-viju.github.io/The-AI-Explorer/projects/smart-helmet.html</loc>
+        <lastmod>2026-06-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sreehari-viju.github.io/The-AI-Explorer/projects/smart-clock.html</loc>
+        <lastmod>2026-06-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sreehari-viju.github.io/The-AI-Explorer/projects/security-camera.html</loc>
+        <lastmod>2026-06-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sreehari-viju.github.io/The-AI-Explorer/projects/mini-drone.html</loc>
+        <lastmod>2026-06-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
 </urlset>
